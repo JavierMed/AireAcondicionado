@@ -10,6 +10,9 @@ namespace AireAcondicionado.Persistence.Repositories
     public class UnityOfWork : IUnityOfWork
     {
         private readonly AireAcondicionadoDbContext _Context;
+        private static UnityOfWork _Instance;
+        private static readonly object _Lock=new object();
+
 
         public IAlmacenRepository Almacenes { get; private set; }
         public ICargoRepository Cargos { get; private set; }
@@ -35,6 +38,8 @@ namespace AireAcondicionado.Persistence.Repositories
 
         private UnityOfWork()
         {
+            //Se crea un unico contexto para la base de datos
+            //para apuntar todos los repositorios a la misma base de datos.
             _Context = new AireAcondicionadoDbContext();
 
             Almacenes = new AlmacenRepository(_Context);
@@ -61,14 +66,33 @@ namespace AireAcondicionado.Persistence.Repositories
 
         }
 
-        void IDisposable.Dispose()
+        //Implementa la clase singleton para instanciar la clase UnityOfWork
+        //con este patron se asegura que en cualquier parte del codigo que se quiera
+        //instancia la base de datos, sedevelva una unica referencia.
+        public static UnityOfWork Instance
         {
-            throw new NotImplementedException();
+            get
+            {
+                //Variable de control para manejar el acceso concurrente
+                //al instanciamiento de la clase UnitytOfWork
+                lock (_Lock)
+                {
+                    if (_Instance == null)
+                        _Instance = new UnityOfWork();
+                }
+
+                return _Instance;
+            }
         }
 
-        int IUnityOfWork.SaveChange()
+        public void Dispose()
         {
-            throw new NotImplementedException();
+            _Context.Dispose();
+        }
+
+        public int SaveChange()
+        {
+            return _Context.SaveChanges();
         }
     }
 }
