@@ -12,6 +12,18 @@ namespace AireAcondicionado.Persistence.EntityTypeConfigurations
     {
         public TrabajadorConfiguration()
         {
+            Property(v => v.sueldo)
+               .IsRequired()
+               .HasColumnType("double");
+
+            Property(v => v.bono)
+               .IsRequired()
+               .HasColumnType("double");
+
+            HasRequired(v => v.Cargo)
+                .WithMany(g => g.Trabajadores)
+                .HasForeignKey(v => v.CargoId);
+
 
         }
     }

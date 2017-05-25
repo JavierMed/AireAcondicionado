@@ -15,7 +15,8 @@ namespace AireAcondicionado.Entities.Entities
         public ICollection<Cotizacion> Cotizaciones { get; set; }
 
         public ICollection<Servicio> Servicios { get; set; }
-
+        
+        public int CargoId { get; set; }
         public Cargo Cargo { get; set; }
 
         public Trabajador()

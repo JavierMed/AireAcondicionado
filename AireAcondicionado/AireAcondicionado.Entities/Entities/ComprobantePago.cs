@@ -16,7 +16,7 @@ namespace AireAcondicionado.Entities.Entities
         public double total { get; set; }
         public DateTime fechaPago { get; set; }
 
-
+        public int ClienteId { get; set; }
         public Cliente Cliente { get; set; }
 
         public int CotizacionId { get; set; }

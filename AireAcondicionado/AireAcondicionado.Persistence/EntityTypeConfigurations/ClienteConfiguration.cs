@@ -12,7 +12,11 @@ namespace AireAcondicionado.Persistence.EntityTypeConfigurations
     {
         public ClienteConfiguration()
         {
+            ToTable("Cliente");
+            HasKey(p => p.ClienteId);
 
+            Map<CliNatural>(m => m.Requires("Descriminador").HasValue("CliNatural"));
+            Map<CliEmpresa>(m => m.Requires("Descriminador").HasValue("CliEmpresa"));
         }
     }
 }
