@@ -8,3 +8,7 @@ C:\Users\JavierMedina\Desktop\AireAcondicionado\AireAcondicionado\AireAcondicion
 C:\Users\JavierMedina\Desktop\AireAcondicionado\AireAcondicionado\AireAcondicionado.Entities\obj\Debug\AireAcondicionado.Entities.dll
 C:\Users\JavierMedina\Desktop\AireAcondicionado\AireAcondicionado\AireAcondicionado.Entities\obj\Debug\AireAcondicionado.Entities.pdb
 C:\Users\JavierMedina\Desktop\AireAcondicionado\AireAcondicionado\AireAcondicionado.Entities\obj\Debug\AireAcondicionado.Entities.csprojResolveAssemblyReference.cache
+C:\Users\JavierMedina\Documents\GitHub\AireAcondicionado\AireAcondicionado\AireAcondicionado.Entities\bin\Debug\AireAcondicionado.Entities.dll
+C:\Users\JavierMedina\Documents\GitHub\AireAcondicionado\AireAcondicionado\AireAcondicionado.Entities\bin\Debug\AireAcondicionado.Entities.pdb
+C:\Users\JavierMedina\Documents\GitHub\AireAcondicionado\AireAcondicionado\AireAcondicionado.Entities\obj\Debug\AireAcondicionado.Entities.dll
+C:\Users\JavierMedina\Documents\GitHub\AireAcondicionado\AireAcondicionado\AireAcondicionado.Entities\obj\Debug\AireAcondicionado.Entities.pdb

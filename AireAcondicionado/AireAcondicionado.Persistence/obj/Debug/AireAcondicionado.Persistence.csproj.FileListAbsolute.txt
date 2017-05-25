@@ -24,3 +24,17 @@ C:\Users\JavierMedina\Desktop\AireAcondicionado\AireAcondicionado\AireAcondicion
 C:\Users\JavierMedina\Desktop\AireAcondicionado\AireAcondicionado\AireAcondicionado.Persistence\obj\Debug\AireAcondicionado.Persistence.pdb
 C:\Users\JavierMedina\Desktop\AireAcondicionado\AireAcondicionado\AireAcondicionado.Persistence\obj\Debug\AireAcondicionado.Persistence.Migrations.initialmode.resources
 C:\Users\JavierMedina\Desktop\AireAcondicionado\AireAcondicionado\AireAcondicionado.Persistence\obj\Debug\AireAcondicionado.Persistence.csproj.GenerateResource.Cache
+C:\Users\JavierMedina\Documents\GitHub\AireAcondicionado\AireAcondicionado\AireAcondicionado.Persistence\bin\Debug\AireAcondicionado.Persistence.dll.config
+C:\Users\JavierMedina\Documents\GitHub\AireAcondicionado\AireAcondicionado\AireAcondicionado.Persistence\bin\Debug\AireAcondicionado.Persistence.dll
+C:\Users\JavierMedina\Documents\GitHub\AireAcondicionado\AireAcondicionado\AireAcondicionado.Persistence\bin\Debug\AireAcondicionado.Persistence.pdb
+C:\Users\JavierMedina\Documents\GitHub\AireAcondicionado\AireAcondicionado\AireAcondicionado.Persistence\bin\Debug\AireAcondicionado.Entities.dll
+C:\Users\JavierMedina\Documents\GitHub\AireAcondicionado\AireAcondicionado\AireAcondicionado.Persistence\bin\Debug\EntityFramework.dll
+C:\Users\JavierMedina\Documents\GitHub\AireAcondicionado\AireAcondicionado\AireAcondicionado.Persistence\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\JavierMedina\Documents\GitHub\AireAcondicionado\AireAcondicionado\AireAcondicionado.Persistence\bin\Debug\AireAcondicionado.Entities.pdb
+C:\Users\JavierMedina\Documents\GitHub\AireAcondicionado\AireAcondicionado\AireAcondicionado.Persistence\bin\Debug\EntityFramework.xml
+C:\Users\JavierMedina\Documents\GitHub\AireAcondicionado\AireAcondicionado\AireAcondicionado.Persistence\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\JavierMedina\Documents\GitHub\AireAcondicionado\AireAcondicionado\AireAcondicionado.Persistence\obj\Debug\AireAcondicionado.Persistence.csprojResolveAssemblyReference.cache
+C:\Users\JavierMedina\Documents\GitHub\AireAcondicionado\AireAcondicionado\AireAcondicionado.Persistence\obj\Debug\AireAcondicionado.Persistence.Migrations.initialmode.resources
+C:\Users\JavierMedina\Documents\GitHub\AireAcondicionado\AireAcondicionado\AireAcondicionado.Persistence\obj\Debug\AireAcondicionado.Persistence.csproj.GenerateResource.Cache
+C:\Users\JavierMedina\Documents\GitHub\AireAcondicionado\AireAcondicionado\AireAcondicionado.Persistence\obj\Debug\AireAcondicionado.Persistence.dll
+C:\Users\JavierMedina\Documents\GitHub\AireAcondicionado\AireAcondicionado\AireAcondicionado.Persistence\obj\Debug\AireAcondicionado.Persistence.pdb
