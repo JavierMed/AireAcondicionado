@@ -12,7 +12,18 @@ namespace AireAcondicionado.Persistence.EntityTypeConfigurations
     {
         public ServicioConfiguration()
         {
+            HasRequired(v => v.Cotizacion)
+                .WithMany(g => g.Servicios)
+                .HasForeignKey(v => v.CotizacionId);
 
+            HasMany(v => v.Trabajadores)
+                .WithMany(t => t.Servicios)
+                .Map(m =>
+                {
+                    m.ToTable("ServicioTrabjador");
+                    m.MapLeftKey("ServicioId");
+                    m.MapRightKey("TrabajadorId");
+                });
         }
     }
 }

@@ -12,7 +12,29 @@ namespace AireAcondicionado.Persistence.EntityTypeConfigurations
     {
         public ComprobantePagoConfiguration()
         {
+            Property(v => v.tipoComprobante)
+               .IsRequired()
+               .HasMaxLength(150);
 
+            Property(v => v.cantidad)
+                .IsRequired()
+                .HasColumnType("int");
+
+            Property(v => v.descripcion)
+               .IsRequired()
+               .HasMaxLength(150);
+
+            Property(v => v.total)
+                .IsRequired()
+                .HasColumnType("double");
+
+            Property(v => v.fechaPago)
+                .IsRequired()
+                .HasColumnType("DateTime");
+
+            HasRequired(v => v.Cliente)
+                .WithMany(g => g.ComprobantePagos)
+                .HasForeignKey(v => v.ClienteId);
         }
     }
 }

@@ -15,6 +15,16 @@ namespace AireAcondicionado.Persistence.EntityTypeConfigurations
             Property(v => v.nomProveedor)
                 .IsRequired()
                 .HasMaxLength(150);
+
+
+            Property(v => v.direccion)
+                .IsRequired()
+                .HasMaxLength(150);
+
+
+            Property(v => v.telefono)
+                .IsRequired()
+                .HasMaxLength(50);
         }
     }
 }

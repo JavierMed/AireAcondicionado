@@ -12,7 +12,29 @@ namespace AireAcondicionado.Persistence.EntityTypeConfigurations
     {
         public ContratoConfiguration()
         {
+            Property(v => v.fechaInicio)
+                .IsRequired()
+                .HasColumnType("DateTime");
 
+            Property(v => v.fechaCulminacion)
+                .IsRequired()
+                .HasColumnType("DateTime");
+
+            Property(v => v.fechaGarantia)
+                .IsRequired()
+                .HasColumnType("DateTime");
+
+            HasRequired(v => v.Almacen)
+                .WithMany(g => g.Contratos)
+                .HasForeignKey(v => v.AlmacenId);
+
+            HasRequired(v => v.FormaPago)
+                .WithMany(g => g.Contratos)
+                .HasForeignKey(v => v.FormaPagoId);
+
+            HasRequired(v => v.Cotizacion)
+                .WithMany(g => g.Contratos)
+                .HasForeignKey(v => v.CotizacionId);
         }
     }
 }
