@@ -8,7 +8,17 @@ using System.Threading.Tasks;
 
 namespace AireAcondicionado.Persistence.Repositories
 {
-    public class UbigeoRepository:Repository<Ubigeo>,IUbigeoRepository
+    public class UbigeoRepository : Repository<Ubigeo>, IUbigeoRepository
     {
+        private readonly AireAcondicionadoDbContext _Context;
+
+        public UbigeoRepository(AireAcondicionadoDbContext _Context)
+        {
+            this._Context = _Context;
+        }
+        private UbigeoRepository()
+        {
+
+        }
     }
 }

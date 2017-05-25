@@ -8,7 +8,17 @@ using System.Threading.Tasks;
 
 namespace AireAcondicionado.Persistence.Repositories
 {
-    public class FormaPagoRepository:Repository<FormaPago>,IFormaPagoRepository
+    public class FormaPagoRepository : Repository<FormaPago>, IFormaPagoRepository
     {
+        private readonly AireAcondicionadoDbContext _Context;
+
+        public FormaPagoRepository(AireAcondicionadoDbContext _Context)
+        {
+            this._Context = _Context;
+        }
+        private FormaPagoRepository()
+        {
+
+        }
     }
 }

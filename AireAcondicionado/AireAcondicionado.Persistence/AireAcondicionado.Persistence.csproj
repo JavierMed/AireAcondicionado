@@ -76,6 +76,7 @@
     <Compile Include="Repositories\ServicioRepository.cs" />
     <Compile Include="Repositories\TrabajadorRepository.cs" />
     <Compile Include="Repositories\UbigeoRepository.cs" />
+    <Compile Include="Repositories\UnityOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

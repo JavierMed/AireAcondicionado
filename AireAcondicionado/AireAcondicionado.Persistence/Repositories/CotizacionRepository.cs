@@ -8,7 +8,17 @@ using System.Threading.Tasks;
 
 namespace AireAcondicionado.Persistence.Repositories
 {
-    public class CotizacionRepository:Repository<Cotizacion>,ICotizacionRepository
+    public class CotizacionRepository : Repository<Cotizacion>, ICotizacionRepository
     {
+        private readonly AireAcondicionadoDbContext _Context;
+
+        public CotizacionRepository(AireAcondicionadoDbContext _Context)
+        {
+            this._Context = _Context;
+        }
+        private CotizacionRepository()
+        {
+
+        }
     }
 }
