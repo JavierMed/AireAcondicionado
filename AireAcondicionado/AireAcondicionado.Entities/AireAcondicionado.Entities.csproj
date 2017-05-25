@@ -83,6 +83,7 @@
     <Compile Include="IRepositories\IServicioRepository.cs" />
     <Compile Include="IRepositories\ITrabajadorRepository.cs" />
     <Compile Include="IRepositories\IUbigeoRepository.cs" />
+    <Compile Include="IRepositories\IUnityOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
