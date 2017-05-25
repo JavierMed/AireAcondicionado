@@ -1,4 +1,5 @@
 ﻿using AireAcondicionado.Entities.Entities;
+using AireAcondicionado.Persistence.EntityTypeConfigurations;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -31,5 +32,33 @@ namespace AireAcondicionado.Persistence
         public DbSet<Servicio> Servicios { get; set; }
         public DbSet<Trabajador> Trabajadores { get; set; }
         public DbSet<Ubigeo> Ubigeos { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Configurations.Add(new AlmacenConfiguration());
+            modelBuilder.Configurations.Add(new CargoConfiguration());
+            modelBuilder.Configurations.Add(new CliEmpresaConfiguration());
+            modelBuilder.Configurations.Add(new ClienteConfiguration());
+            modelBuilder.Configurations.Add(new CliNaturalConfiguration());
+            modelBuilder.Configurations.Add(new ComprobantePagoConfiguration());
+            modelBuilder.Configurations.Add(new ContactoConfiguration());
+            modelBuilder.Configurations.Add(new ContratoConfiguration());
+            modelBuilder.Configurations.Add(new CotizacionConfiguration());
+            modelBuilder.Configurations.Add(new DepartamentoConfiguration());
+            modelBuilder.Configurations.Add(new DistritoConfiguration());
+            modelBuilder.Configurations.Add(new DocumentoConfiguration());
+            modelBuilder.Configurations.Add(new FormaPagoConfiguration());
+            modelBuilder.Configurations.Add(new PedidoConfiguration());
+            modelBuilder.Configurations.Add(new PersonaConfiguration());
+            modelBuilder.Configurations.Add(new ProductoConfiguration());
+            modelBuilder.Configurations.Add(new ProveedorConfiguration());
+            modelBuilder.Configurations.Add(new ProvinciaConfiguration());
+            modelBuilder.Configurations.Add(new ServicioConfiguration());
+            modelBuilder.Configurations.Add(new TrabajadorConfiguration());
+            modelBuilder.Configurations.Add(new UbigeoConfiguration());
+            
+            base.OnModelCreating(modelBuilder);
+        }
+
     }
 }
