@@ -48,6 +48,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AireAcondicionadoDbContext.cs" />
+    <Compile Include="EntityTypeConfigurations\AlmacenConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\CargoConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\CliEmpresaConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\ClienteConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\CliNaturalConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\ComprobantePagoConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\ContactoConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\ContratoConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\CotizacionConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\DepartamentoConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\DistritoConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\DocumentoConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\FormaPagoConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\PedidoConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\PersonaConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\ProductoConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\ProveedorConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\ProvinciaConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\ServicioConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\TrabajadorConfiguration.cs" />
+    <Compile Include="EntityTypeConfigurations\UbigeoConfiguration.cs" />
     <Compile Include="Migrations\201705240021521_initialmode.cs" />
     <Compile Include="Migrations\201705240021521_initialmode.Designer.cs">
       <DependentUpon>201705240021521_initialmode.cs</DependentUpon>
