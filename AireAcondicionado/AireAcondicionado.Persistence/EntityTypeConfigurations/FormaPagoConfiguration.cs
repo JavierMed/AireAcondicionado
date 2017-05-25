@@ -12,7 +12,9 @@ namespace AireAcondicionado.Persistence.EntityTypeConfigurations
     {
         public FormaPagoConfiguration()
         {
-
+            Property(v => v.tipoPago)
+                .IsRequired()
+                .HasMaxLength(100);
         }
     }
 }

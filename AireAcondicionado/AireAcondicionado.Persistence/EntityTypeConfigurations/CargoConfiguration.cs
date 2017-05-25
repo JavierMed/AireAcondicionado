@@ -12,7 +12,9 @@ namespace AireAcondicionado.Persistence.EntityTypeConfigurations
     {
         public CargoConfiguration()
         {
-            
+            Property(v => v.nomCargo)
+                .IsRequired()
+                .HasMaxLength(100);
         }
     }
 }

@@ -10,5 +10,11 @@ namespace AireAcondicionado.Persistence.EntityTypeConfigurations
 {
     public class DistritoConfiguration:EntityTypeConfiguration<Distrito>
     {
+        public DistritoConfiguration()
+        {
+            Property(v => v.nomDistrito)
+                .IsRequired()
+                .HasMaxLength(100);
+        }
     }
 }

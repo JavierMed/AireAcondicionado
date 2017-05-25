@@ -12,7 +12,9 @@ namespace AireAcondicionado.Persistence.EntityTypeConfigurations
     {
         public ProvinciaConfiguration()
         {
-
+            Property(v => v.nomProvincia)
+                .IsRequired()
+                .HasMaxLength(100);
         }
     }
 }

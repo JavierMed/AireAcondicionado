@@ -9,7 +9,6 @@ namespace AireAcondicionado.Entities.Entities
     public class Pedido
     {
         public int PedidoId { get; set; }
-        public int CompraId { get; set; }
         public int cantidad { get; set; }
         public double precioCompra { get; set; }
         public double descuento { get; set; }

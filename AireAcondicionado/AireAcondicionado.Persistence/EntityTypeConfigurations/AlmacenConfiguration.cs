@@ -12,7 +12,13 @@ namespace AireAcondicionado.Persistence.EntityTypeConfigurations
     {
         public AlmacenConfiguration()
         {
-            
+            Property(v => v.modelo)
+                .IsRequired()
+                .HasMaxLength(100);
+
+            HasRequired(v => v.Producto)
+                .WithMany(g => g.Almacenes)
+                .HasForeignKey(v => v.ProductoId);
         }
     }
 }

@@ -12,6 +12,9 @@ namespace AireAcondicionado.Persistence.EntityTypeConfigurations
     {
         public DepartamentoConfiguration()
         {
+            Property(v => v.nomDepartamento)
+                .IsRequired()
+                .HasMaxLength(100);
 
         }
     }

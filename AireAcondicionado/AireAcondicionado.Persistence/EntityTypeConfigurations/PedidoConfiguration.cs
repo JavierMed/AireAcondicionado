@@ -12,7 +12,11 @@ namespace AireAcondicionado.Persistence.EntityTypeConfigurations
     {
         public PedidoConfiguration()
         {
+            HasRequired(v => v.Proveedor)
+                .WithMany(g => g.Pedidos)
+                .HasForeignKey(v => v.ProveedorId);
 
+            HasMany(v=>v.cantidad).WithMany().
         }
     }
 }

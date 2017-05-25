@@ -35,3 +35,6 @@ C:\Users\JavierMedina\Documents\GitHub\AireAcondicionado\AireAcondicionado\AireA
 C:\Users\JavierMedina\Documents\GitHub\AireAcondicionado\AireAcondicionado\AireAcondicionado.Console\bin\Debug\AireAcondicionado.Persistence.pdb
 C:\Users\JavierMedina\Documents\GitHub\AireAcondicionado\AireAcondicionado\AireAcondicionado.Console\bin\Debug\EntityFramework.xml
 C:\Users\JavierMedina\Documents\GitHub\AireAcondicionado\AireAcondicionado\AireAcondicionado.Console\obj\Debug\AireAcondicionado.Console.csprojResolveAssemblyReference.cache
+C:\Users\JavierMedina\Documents\Programacion I\AireAcondicionado\AireAcondicionado.Console\bin\Debug\AireAcondicionado.Console.exe.config
+C:\Users\JavierMedina\Documents\Programacion I\AireAcondicionado\AireAcondicionado.Console\obj\Debug\AireAcondicionado.Console.exe
+C:\Users\JavierMedina\Documents\Programacion I\AireAcondicionado\AireAcondicionado.Console\obj\Debug\AireAcondicionado.Console.pdb

@@ -12,7 +12,9 @@ namespace AireAcondicionado.Persistence.EntityTypeConfigurations
     {
         public ProveedorConfiguration()
         {
-
+            Property(v => v.nomProveedor)
+                .IsRequired()
+                .HasMaxLength(150);
         }
     }
 }

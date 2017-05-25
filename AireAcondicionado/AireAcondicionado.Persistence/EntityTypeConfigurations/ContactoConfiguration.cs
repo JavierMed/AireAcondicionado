@@ -12,7 +12,7 @@ namespace AireAcondicionado.Persistence.EntityTypeConfigurations
     {
         public ContactoConfiguration()
         {
-
+            
         }
     }
 }

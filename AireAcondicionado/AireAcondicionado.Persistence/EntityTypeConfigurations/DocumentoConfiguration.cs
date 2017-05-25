@@ -12,7 +12,9 @@ namespace AireAcondicionado.Persistence.EntityTypeConfigurations
     {
         public DocumentoConfiguration()
         {
-
+            Property(v => v.tipoDocumento)
+                .IsRequired()
+                .HasMaxLength(100);
         }
     }
 }

@@ -16,6 +16,7 @@ namespace AireAcondicionado.Entities.Entities
         public double precioVenta { get; set; }
         public double descuento { get; set; }
 
+        public int ProductoId { get; set; }
         public Producto Producto { get; set; }
 
         public List<Contrato> Contratos { get; set; }

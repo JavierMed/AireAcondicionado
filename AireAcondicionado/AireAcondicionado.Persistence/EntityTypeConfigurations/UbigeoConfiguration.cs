@@ -12,7 +12,19 @@ namespace AireAcondicionado.Persistence.EntityTypeConfigurations
     {
         public UbigeoConfiguration()
         {
+            HasRequired(v => v.Distrito)
+                .WithMany(g => g.Ubigeos)
+                .HasForeignKey(v => v.DistritoId);
 
+
+            HasRequired(v => v.Departamento)
+                .WithMany(g => g.Ubigeos)
+                .HasForeignKey(v => v.DepartamentoId);
+
+
+            HasRequired(v => v.Provincia)
+                .WithMany(g => g.Ubigeos)
+                .HasForeignKey(v => v.ProvinciaId);
         }
     }
 }
