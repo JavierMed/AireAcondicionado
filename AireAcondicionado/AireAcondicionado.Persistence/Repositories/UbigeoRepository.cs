@@ -10,15 +10,10 @@ namespace AireAcondicionado.Persistence.Repositories
 {
     public class UbigeoRepository : Repository<Ubigeo>, IUbigeoRepository
     {
-        private readonly AireAcondicionadoDbContext _Context;
+//        private readonly AireAcondicionadoDbContext _Context;
 
-        public UbigeoRepository(AireAcondicionadoDbContext _Context)
+        public UbigeoRepository(AireAcondicionadoDbContext _Context) : base(_Context)
         {
-            this._Context = _Context;
-        }
-        private UbigeoRepository()
-        {
-
         }
     }
 }

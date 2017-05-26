@@ -10,15 +10,10 @@ namespace AireAcondicionado.Persistence.Repositories
 {
     public class DepartamentoRepository : Repository<Departamento>, IDepartamentoRepository
     {
-        private readonly AireAcondicionadoDbContext _Context;
+        //private readonly AireAcondicionadoDbContext _Context;
 
-        public DepartamentoRepository(AireAcondicionadoDbContext _Context)
+        public DepartamentoRepository(AireAcondicionadoDbContext _Context) : base(_Context)
         {
-            this._Context = _Context;
-        }
-        private DepartamentoRepository()
-        {
-
         }
     }
 }

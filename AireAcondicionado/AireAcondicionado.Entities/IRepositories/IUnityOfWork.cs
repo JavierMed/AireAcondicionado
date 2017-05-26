@@ -31,5 +31,7 @@ namespace AireAcondicionado.Entities.IRepositories
         IUbigeoRepository Ubigeos { get; }
 
         int SaveChange();
+
+        void StateModified(object entity);
     }
 }

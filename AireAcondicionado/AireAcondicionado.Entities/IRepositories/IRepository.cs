@@ -24,13 +24,13 @@ namespace AireAcondicionado.Entities.IRepositories
         //predicate es una expresion lambda que tiene como parametro de entrada TEntity
         //y devolvera una expresion booleana. Si esa expresion es True para un registro,
         //entonces dicho registro se agrega a la lista de registros a devolver a la aplicacion.
-        IEnumerator<TEntity> Find(Expression<Func<TEntity, bool>> predicate);
+        IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> predicate);
 
         //UPDATES
         //Actualiza un registro al repositorio (SQL Server) a la tabla TEntity
-        void Update(TEntity entity);
+        //void Update(TEntity entity);
         //Actualiza un grupo de registros al repositorio (SQL Server) a la tabla TEntity
-        void UpdateRange(IEnumerable<TEntity> entities);
+        //void UpdateRange(IEnumerable<TEntity> entities);
 
         //DELETES
         //Elimina un registro al repositorio (SQL Server) a la tabla TEntity

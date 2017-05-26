@@ -10,15 +10,10 @@ namespace AireAcondicionado.Persistence.Repositories
 {
     public class FormaPagoRepository : Repository<FormaPago>, IFormaPagoRepository
     {
-        private readonly AireAcondicionadoDbContext _Context;
+        //private readonly AireAcondicionadoDbContext _Context;
 
-        public FormaPagoRepository(AireAcondicionadoDbContext _Context)
+        public FormaPagoRepository(AireAcondicionadoDbContext _Context) : base(_Context)
         {
-            this._Context = _Context;
-        }
-        private FormaPagoRepository()
-        {
-
         }
     }
 }
