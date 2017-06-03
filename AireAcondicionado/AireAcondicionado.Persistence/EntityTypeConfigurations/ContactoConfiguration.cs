@@ -12,7 +12,9 @@ namespace AireAcondicionado.Persistence.EntityTypeConfigurations
     {
         public ContactoConfiguration()
         {
-            
+            Property(v => v.contacto)
+               .IsRequired()
+               .HasMaxLength(200);
         }
     }
 }

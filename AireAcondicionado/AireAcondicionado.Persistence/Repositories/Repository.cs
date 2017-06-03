@@ -1,4 +1,5 @@
 ﻿using AireAcondicionado.Entities.IRepositories;
+using AireAcondicionado.Persistence;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,6 +29,21 @@ namespace AireAcondicionado.Persistence.Repositories
             _Context.Set<TEntity>().AddRange(entities);
         }
 
+        public TEntity Get(int Id)
+        {
+            return _Context.Set<TEntity>().Find(Id);
+        }
+
+        public IEnumerable<TEntity> GetAll()
+        {
+            return _Context.Set<TEntity>().ToList();
+        }
+
+        public IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> predicate)
+        {
+            return _Context.Set<TEntity>().Where(predicate);
+        }
+
         public void Delete(TEntity entity)
         {
             _Context.Set<TEntity>().Remove(entity);
@@ -38,20 +54,8 @@ namespace AireAcondicionado.Persistence.Repositories
             _Context.Set<TEntity>().RemoveRange(entities);
         }
 
-        public IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> predicate)
-        {
-            return _Context.Set<TEntity>().Where(predicate);
-        }
+        
 
-        public TEntity Get(int Id)
-        {
-            return _Context.Set<TEntity>().Find(Id);
-        }
-
-        public IEnumerable<TEntity> GetAll()
-        {
-            return _Context.Set<TEntity>().ToList();
-        }
 
     }
 }

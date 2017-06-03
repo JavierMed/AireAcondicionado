@@ -11,6 +11,10 @@ namespace AireAcondicionado.MVC.App_Start
     using Ninject;
     using Ninject.Web.Common;
 
+    using AireAcondicionado.Entities.IRepositories;
+    using AireAcondicionado.Persistence;
+    using AireAcondicionado.Persistence.Repositories;
+
     public static class NinjectWebCommon 
     {
         private static readonly Bootstrapper bootstrapper = new Bootstrapper();
@@ -61,6 +65,31 @@ namespace AireAcondicionado.MVC.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
+            kernel.Bind<IUnityOfWork>().To<UnityOfWork>();
+            kernel.Bind<AireAcondicionadoDbContext>().To<AireAcondicionadoDbContext>();
+
+            kernel.Bind<IAlmacenRepository>().To<AlmacenRepository>();
+            kernel.Bind<ICargoRepository>().To<CargoRepository>();
+            kernel.Bind<ICliEmpresaRepository>().To<CliEmpresaRepository>();
+            kernel.Bind<IClienteRepository>().To<ClienteRepository>();
+            kernel.Bind<ICliNaturalRepository>().To<CliNaturalRepository>();
+            kernel.Bind<IComprobantePagoRepository>().To<ComprobantePagoRepository>();
+            kernel.Bind<IContactoRepository>().To<ContactoRepository>();
+            kernel.Bind<IContratoRepository>().To<ContratoRepository>();
+            kernel.Bind<ICotizacionRepository>().To<CotizacionRepository>();
+            kernel.Bind<IDepartamentoRepository>().To<DepartamentoRepository>();
+            kernel.Bind<IDistritoRepository>().To<DistritoRepository>();
+            kernel.Bind<IDocumentoRepository>().To<DocumentoRepository>();
+            kernel.Bind<IFormaPagoRepository>().To<FormaPagoRepository>();
+            kernel.Bind<IPedidoRepository>().To<PedidoRepository>();
+            kernel.Bind<IPersonaRepository>().To<PersonaRepository>();
+            kernel.Bind<IProductoRepository>().To<ProductoRepository>();
+            kernel.Bind<IProveedorRepository>().To<ProveedorRepository>();
+            kernel.Bind<IProvinciaRepository>().To<ProvinciaRepository>();
+            kernel.Bind<IServicioRepository>().To<ServicioRepository>();
+            kernel.Bind<ITrabajadorRepository>().To<TrabajadorRepository>();
+            kernel.Bind<IUbigeoRepository>().To<UbigeoRepository>();
+
         }        
     }
 }

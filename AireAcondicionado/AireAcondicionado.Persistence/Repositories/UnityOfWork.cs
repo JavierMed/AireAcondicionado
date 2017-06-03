@@ -14,27 +14,27 @@ namespace AireAcondicionado.Persistence.Repositories
         private static readonly object _Lock=new object();
 
 
-        public IAlmacenRepository Almacenes { get; private set; }
-        public ICargoRepository Cargos { get; private set; }
-        public ICliEmpresaRepository CliEmpresas { get; private set; }
-        public IClienteRepository Clientes { get; private set; }
-        public ICliNaturalRepository CliNaturales { get; private set; }
-        public IComprobantePagoRepository ComprobantePagos { get; private set; }
-        public IContactoRepository Contactos { get; private set; }
-        public IContratoRepository Contratos { get; private set; }
-        public ICotizacionRepository Cotizaciones { get; private set; }
-        public IDepartamentoRepository Departamentos { get; private set; }
-        public IDistritoRepository Distritos { get; private set; }
-        public IDocumentoRepository Documentos { get; private set; }
-        public IFormaPagoRepository FormaPagos { get; private set; }
-        public IPedidoRepository Pedidos { get; private set; }
-        public IPersonaRepository Personas { get; private set; }
-        public IProductoRepository Productos { get; private set; }
-        public IProveedorRepository Proveedores { get; private set; }
-        public IProvinciaRepository Provincias { get; private set; }
-        public IServicioRepository Servicios { get; private set; }
-        public ITrabajadorRepository Trabajadores { get; private set; }
-        public IUbigeoRepository Ubigeos { get; private set; }
+        public IAlmacenRepository Almacenes { get;  set; }
+        public ICargoRepository Cargos { get;  set; }
+        public ICliEmpresaRepository CliEmpresas { get;  set; }
+        public IClienteRepository Clientes { get;  set; }
+        public ICliNaturalRepository CliNaturales { get;  set; }
+        public IComprobantePagoRepository ComprobantePagos { get;  set; }
+        public IContactoRepository Contactos { get;  set; }
+        public IContratoRepository Contratos { get;  set; }
+        public ICotizacionRepository Cotizaciones { get;  set; }
+        public IDepartamentoRepository Departamentos { get;  set; }
+        public IDistritoRepository Distritos { get;  set; }
+        public IDocumentoRepository Documentos { get;  set; }
+        public IFormaPagoRepository FormaPagos { get;  set; }
+        public IPedidoRepository Pedidos { get;  set; }
+        public IPersonaRepository Personas { get;  set; }
+        public IProductoRepository Productos { get;  set; }
+        public IProveedorRepository Proveedores { get;  set; }
+        public IProvinciaRepository Provincias { get;  set; }
+        public IServicioRepository Servicios { get;  set; }
+        public ITrabajadorRepository Trabajadores { get;  set; }
+        public IUbigeoRepository Ubigeos { get;  set; }
 
         private UnityOfWork()
         {
@@ -93,6 +93,22 @@ namespace AireAcondicionado.Persistence.Repositories
         public int SaveChange()
         {
             return _Context.SaveChanges();
+        }
+
+        /*int IUnityOfWork.SaveChange()
+        {
+            throw new NotImplementedException();
+        }
+
+        void IDisposable.Dispose()
+        {
+            throw new NotImplementedException();
+        }*/
+
+        public void StateModified(object entity)
+        {
+            //throw new NotImplementedException();
+            _Context.Entry(entity).State = System.Data.Entity.EntityState.Modified;
         }
     }
 }
